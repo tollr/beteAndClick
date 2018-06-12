@@ -1,0 +1,12 @@
+<div id="target">
+
+</div>
+
+<script>
+  const rdmScore = () => Math.floor(Math.random() * (3));
+  let scores = [...Array(48)];
+
+  const markup = `${scores.map( score =>`<div>${rdmScore()}-${rdmScore()}</div>`).join('')}`;
+
+  target.innerHTML = markup;
+</script>
